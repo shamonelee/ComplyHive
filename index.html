@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="description" content="ComplyHive helps you create boldly and launch confidently with product compliance, documentation, and regulatory support." />
+  <title>ComplyHive — Create boldly. Launch confidently.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Ambient canvas background -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="ComplyHive home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">ComplyHive</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="srOnly">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#proof">Credibility</a>
+          <a href="#contact" class="btn btn--sm btn--ghost">Book a call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot"></span>
+            Product compliance & documentation, done properly.
+          </div>
+
+          <h1>Create boldly.<br><span class="grad">Launch confidently.</span></h1>
+
+          <p class="lede">
+            ComplyHive helps brands ship safely into the UK/EU/US with structured compliance: technical files,
+            labeling/claims checks, supplier declarations, and evidence-ready documentation.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Get a compliance plan</a>
+            <a class="btn btn--ghost" href="#services">See services</a>
+          </div>
+
+          <div class="metrics" role="list">
+            <div class="metric" role="listitem">
+              <div class="metric__num">UK · EU · US</div>
+              <div class="metric__label">Market coverage</div>
+            </div>
+            <div class="metric" role="listitem">
+              <div class="metric__num">Evidence-first</div>
+              <div class="metric__label">Audit-ready packs</div>
+            </div>
+            <div class="metric" role="listitem">
+              <div class="metric__num">Fast turnaround</div>
+              <div class="metric__label">Clear next steps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="ComplyHive highlights">
+          <div class="glass">
+            <h2>What you get</h2>
+            <ul class="checklist">
+              <li>Gap assessment + action plan</li>
+              <li>Technical file structure + templates</li>
+              <li>Labeling, packaging & claims review</li>
+              <li>Supplier declarations + traceability</li>
+              <li>Risk register + test strategy</li>
+            </ul>
+
+            <div class="card__cta">
+              <a class="btn btn--sm" href="#contact">Book 20 minutes</a>
+              <span class="muted">No fluff, just next actions.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- LOGO STRIP / TRUST -->
+    <section class="trust">
+      <div class="container trust__inner">
+        <p class="muted">Built for teams who need compliance without chaos.</p>
+        <div class="trust__badges" aria-label="Trust badges">
+          <span class="badge">UKCA / CE</span>
+          <span class="badge">RoHS / REACH</span>
+          <span class="badge">WEEE</span>
+          <span class="badge">Supply chain declarations</span>
+          <span class="badge">Technical documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p class="muted">Pick a focused engagement or build a full compliance system.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Compliance Gap Assessment</h3>
+            <p>Rapid review of product, packaging, claims, and evidence. Clear remediation plan.</p>
+            <ul class="bullets">
+              <li>Market mapping (UK/EU/US)</li>
+              <li>Applicable rules & standards list</li>
+              <li>Evidence checklist</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Technical File & Templates</h3>
+            <p>Structured documentation packs built to stand up to retailer, platform, and authority scrutiny.</p>
+            <ul class="bullets">
+              <li>DoC / UKCA & CE packs</li>
+              <li>Risk assessment & test strategy</li>
+              <li>Supplier declaration framework</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Labeling, Packaging & Claims</h3>
+            <p>Claims substantiation and labeling checks to reduce returns, delistings, and enforcement risk.</p>
+            <ul class="bullets">
+              <li>Mandatory markings & warnings</li>
+              <li>Claims review (marketing/legal)</li>
+              <li>Instructions & IFUs</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Supplier & Traceability System</h3>
+            <p>Practical supplier controls for declarations, change control, and ongoing conformity.</p>
+            <ul class="bullets">
+              <li>Supplier onboarding pack</li>
+              <li>Material declarations</li>
+              <li>Version control & re-test triggers</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <div class="section__head">
+          <h2>How it works</h2>
+          <p class="muted">Simple, structured, and documented end-to-end.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Scope</h3>
+            <p>Products, markets, claims, timelines, and risk tolerance. Define what “done” means.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>Evidence</h3>
+            <p>Collect test reports, declarations, labeling, drawings, manuals. Identify gaps fast.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>Fix</h3>
+            <p>Close gaps: testing plan, supplier requests, documentation build, packaging updates.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <h3>Maintain</h3>
+            <p>Change control, re-test triggers, periodic supplier refresh, audit readiness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="section__head">
+          <h2>Credibility, not buzzwords</h2>
+          <p class="muted">
+            Compliance is evidence. We build packs that make sense to engineers, auditors, and retailers.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Deliverables you can use</h3>
+            <ul class="checklist">
+              <li>Compliance matrix (reqs ↔ evidence)</li>
+              <li>Risk register + mitigations</li>
+              <li>Supplier declaration pack</li>
+              <li>Technical file index + version control</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Typical outcomes</h3>
+            <ul class="checklist">
+              <li>Fewer delistings / rejections</li>
+              <li>Cleaner supplier management</li>
+              <li>Faster launches</li>
+              <li>Better audit posture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__copy">
+            <h2>Book a call</h2>
+            <p class="muted">
+              Send a quick brief. You’ll get a recommended approach and a clear list of next actions.
+            </p>
+            <div class="contact__details">
+              <div class="detail">
+                <span class="detail__label">Email</span>
+                <a href="mailto:info@complyhive.net">info@complyhive.net</a>
+              </div>
+              <div class="detail">
+                <span class="detail__label">LinkedIn</span>
+                <a href="#" onclick="return false;" class="muted">Add your profile link</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simple form: builds a mailto: so it works on static hosting with zero backend -->
+          <form class="form" id="leadForm">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </label>
+            <label>
+              <span>Company</span>
+              <input name="company" type="text" autocomplete="organization" required placeholder="Company name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="name@company.com" />
+            </label>
+            <label>
+              <span>What do you need help with?</span>
+              <textarea name="message" rows="5" required placeholder="E.g., UKCA/CE tech file, claims review, supplier declarations, US requirements…"></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send brief</button>
+            <p class="fine muted">
+              This opens your email client with a pre-filled message. If you want a real web form (HubSpot, Tally, Formspree),
+              it’s a 2-minute swap.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted">© <span id="year"></span> ComplyHive Ltd. All rights reserved.</span>
+      <a class="muted" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
