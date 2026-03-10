@@ -1,0 +1,42 @@
+<!-- wp:template-part {"slug":"styles"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:html -->
+<section class="ch-section ch-section--ink ch-page-hero"><div class="ch-container"><span class="ch-overline">Insights</span><h1 class="ch-page-hero__title">Compliance thinking. Delivered clearly.</h1><p class="ch-page-hero__subtitle">Practical guidance, regulatory updates, and technical deep-dives from the ComplyHive team.</p></div></section>
+
+<section class="ch-section ch-section--parchment ch-section--compact"><div class="ch-container"><div class="ch-filter-bar"><a href="/insights/" class="ch-filter-tag ch-filter-tag--active">All</a><a href="/category/ukca-ce-marking/" class="ch-filter-tag">UKCA &amp; CE Marking</a><a href="/category/amazon-compliance/" class="ch-filter-tag">Amazon</a><a href="/category/compliance-guides/" class="ch-filter-tag">Compliance Guides</a><a href="/category/regulation-updates/" class="ch-filter-tag">Regulation Updates</a></div></div></section>
+
+<section class="ch-section ch-section--parchment"><div class="ch-container"><div class="ch-grid ch-grid--3">
+<!-- /wp:html -->
+
+<!-- wp:query {"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+<div class="wp-block-query">
+<!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:group {"className":"ch-insight-card","layout":{"type":"default"}} -->
+<div class="wp-block-group ch-insight-card">
+<!-- wp:post-terms {"term":"category","className":"ch-insight-card__cat","separator":" · "} /-->
+<!-- wp:post-title {"isLink":true,"level":3,"className":"ch-insight-card__title"} /-->
+<!-- wp:post-excerpt {"moreText":"","excerptLength":25,"className":"ch-insight-card__excerpt"} /-->
+<!-- wp:post-date {"className":"ch-insight-card__date","format":"j M Y"} /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph --><p>No posts published yet.</p><!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+
+<!-- wp:html -->
+</div></div></section>
+
+<style>
+.ch-grid .wp-block-query { display: contents; }
+.ch-grid .wp-block-post-template { display: contents; }
+.ch-grid .wp-block-post-template > li { display: contents; }
+</style>
+
+<section class="ch-section ch-section--ink ch-cta-section"><div class="ch-container ch-container--narrow ch-text-center"><span class="ch-overline">Stay Informed</span><h2 class="ch-section__title ch-section__title--light">Compliance updates. No spam.</h2><p class="ch-section__intro ch-section__intro--light">Practical guidance and regulatory updates delivered to your inbox. Unsubscribe any time.</p><div class="ch-newsletter-form"><input type="email" class="ch-newsletter-form__input" placeholder="Your email address" aria-label="Email address"><button class="ch-btn ch-btn--primary">Subscribe <span class="ch-btn__arrow" aria-hidden="true">&rarr;</span></button></div></div></section>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
